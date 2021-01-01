@@ -6,11 +6,11 @@ body {
     background-color: #8fb8cc;
     padding: 0;
     margin: 0;
-    padding-top: 6rem;
+    padding-top: 7.5rem;
     padding-bottom: 15rem;
 }
 .header {
-    font-size: 5rem;
+    font-size: 6rem;
     font-family: 'CookieRunOTF-Bold';
     text-align: center;
     position: fixed;
@@ -30,10 +30,10 @@ body {
 .menutab button{
     padding: 1rem;
     width: 100%;
-    font-size: 2rem;
+    font-size: 3rem;
     border: none;
     outline: none;
-    line-height: 2rem;
+    line-height: 3rem;
 }
 .menutab {
     height: 100%;
@@ -44,8 +44,8 @@ body {
     border-radius: 0.5rem;
     border-bottom-right-radius: 0;
     background-color: #ffdd00;
-    font-size: 2rem;
-    padding: 0.5rem 1.5rem;
+    font-size: 3rem;
+    padding: 0.5rem 1rem;
     outline: none;
 }
 #country {
@@ -92,11 +92,11 @@ body {
 .result {
     display: grid;
     height: 100%;
-    grid-template-columns: 3fr 5fr 2fr;
+    grid-template-columns: 4fr 6fr;
 }
 .resultN {
     margin: 1.5rem;
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-left: auto;
     margin-right: 0.5rem;
     grid-column: 1/4;
@@ -115,18 +115,28 @@ body {
 }
 #list {
     flex: 0.35;
-    font-size: 2rem;
+    font-size: 3rem;
     padding-left: 3rem;
-    text-align: center;
+    text-align: left;
 }
-#list p {
+#list div {
+    margin: 2rem;
+}
+#list img {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    background-color: grey;
+    margin-right: 1rem;
+    object-fit: contain;
+}
+#list span {
     width: fit-content;
     padding:  0.5rem 1rem;
     border-radius: 0.5rem;
     border-bottom-left-radius: 0;
     background-color: white;
 }
-
 .ad1 {
    width: 14rem;
     margin: 0 auto;
@@ -135,8 +145,12 @@ body {
    width: 18rem;
     margin: 0 auto;
 }
+.ad3 {
+    width: 18rem;
+    margin: 0 auto;
+}
 .adv1 {
-    width: 5rem;
+    width: 14rem;
     margin: 0 auto;
 }
 @font-face {

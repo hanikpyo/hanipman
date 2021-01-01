@@ -460,7 +460,7 @@ function getC(name) {
         names = SEA;
     }
     document.getElementById('resultC').style.display = 'block';
-    document.getElementById('list').innerHTML = '<p>' + names.join('</p>' + '\n' + '<p>');
+    document.getElementById('list').innerHTML = '<div>' + '<img src="leaf.png"/>' + '<span>' + names.join('</span>' + '</div>' + '\n' + '<div>' + '<img src="leaf.png"/>' + '<span>' );
     types = '';
     spices = '';
 }
@@ -558,7 +558,7 @@ function getT(name) {
     const filteredArray = names.filter((value) => spices.includes(value));
     var filteredArray2 = names.filter((value) => types.includes(value));
     var filteredArray3 = filteredArray.filter((value) => types.includes(value));
-    document.getElementById('list').innerHTML = '<p>' + filteredArray2.join('</p>' + '\n' + '<p>');
+    document.getElementById('list').innerHTML = '<p>' + filteredArray2.join('</p>' + '<img src="leaf.png"></img>' + '\n' + '<p>');
     document.getElementById('resultT').innerHTML = name;
     document.getElementById('resultT').style.display = 'block';
     document.getElementById('resultS').style.display = 'none';
@@ -580,7 +580,7 @@ function getS(name) {
     var filteredArray3 = filteredArray.filter((value) => spices.includes(value));
 
     if (document.getElementById('resultT').innerHTML == '') {
-        document.getElementById('list').innerHTML = '<p>' + filteredArray2.join('</p>' + '\n' + '<p>');
+        document.getElementById('list').innerHTML = '<p>' + '<img src="leaf.png"></img>' + filteredArray2.join('</p>' + '\n' + '<p>');
         document.getElementById('resultT').innerHTML = name;
         document.getElementById('resultT').style.display = 'block';
     } 
