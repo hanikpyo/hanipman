@@ -116,7 +116,7 @@ body {
 #list {
     flex: 0.35;
     font-size: 3rem;
-    padding-left: 3rem;
+    padding-left: 1rem;
     text-align: left;
 }
 #list div {
@@ -149,7 +149,7 @@ body {
     width: 18rem;
     margin: 0 auto;
 }
-.adv1 {
+.ad4 {
     width: 14rem;
     margin: 0 auto;
 }
