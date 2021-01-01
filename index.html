@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+        <script src='index.js'></script>
+	</head>
+	<body>
+        <header>
+          <div class='header'>
+            오늘 뭐 먹지?
+        </div>  
+        </header>
+        
+        <section class='content'>
+            <div class='result'>
+            <div class='resultN'>
+                <span id='resultC' style='display:none'></span>
+                <span id='resultT' style='display:none'></span>
+                <span id='resultS' style='display:none'></span>
+            </div>
+            <div class='lists'>
+            <div id='list'>
+            </div>
+            </div>
+        </div>
+        <div class='menu'>
+                <div class='menutab'>
+                    <button id='tab01' onclick='hide();hideR();menuC()' style='background-color:white'>국가</button>
+                
+                    <button id='tab02' onclick='hide();hideR();menuT()'>종류</button>
+                
+                    <button id='tab03' onclick='hide();hideR();menuS()'>맵기</button>
+                </div>
+            <div class='menulist'>
+                <div id='country'>
+                <button name='korea' onclick='getC(this.name);show();titleC(this.name);hideT()'>
+                    한식
+                </button>
+                <button name='china' onclick='getC(this.name);show();titleC(this.name);hideT()'>
+                    중식
+                </button>
+                <button name='japan' onclick='getC(this.name);show();titleC(this.name);hideT()'>
+                    일식
+                </button>
+                <button name='western' onclick='getC(this.name);show();titleC(this.name);hideT()'>
+                    양식
+                </button>
+                <button name='SEA' onclick='getC(this.name);show();titleC(this.name);hideT()'>
+                    동남아
+                </button>
+                <button name='franchise' onclick='getC(this.name);shows();titleC(this.name);hideT()'>
+                    프랜차이즈
+                </button>
+                <div id='type'>
+            <button name='meat' onclick='getT(this.name)'>
+                고기
+            </button>
+            <button name='seafood' onclick='getT(this.name)'>
+                해산물
+            </button>
+            <button name='noodle' onclick='getT(this.name)'>
+                면
+            </button>
+            <button name='rice' onclick='getT(this.name)'>
+                밥
+            </button>
+            <button name='soup' onclick='getT(this.name)'>
+                탕
+            </button>
+            <button name='etc' onclick='getT(this.name)'>
+                기타
+            </button>
+        </div>
+        <div id='fran'>
+            <button name='pizza' onclick='getT(this.name)'>
+                피자
+            </button>
+            <button name='burger' onclick='getT(this.name)'>
+                햄버거
+            </button>
+            <button name='chicken' onclick='getT(this.name)'>
+                치킨
+            </button>
+            <button name='etc' onclick='getT(this.name)'>
+                기타
+            </button>
+        </div>
+        <div id='spicy'>
+            <button name='spicy' onclick='getS(this.name)'>
+                매운거
+            </button>
+            <button name='nspicy' onclick='getS(this.name)'>
+                안매운거
+            </button>
+        </div> 
+            </div>
+              <div id='menuT'>
+            <div id='type2'>
+            <button name='meat' onclick='getT2(this.name);titleC(this.name)'>
+                고기
+            </button>
+            <button name='seafood' onclick='getT2(this.name);titleC(this.name)'>
+                해산물
+            </button>
+            <button name='noodle' onclick='getT2(this.name);titleC(this.name)'>
+                면
+            </button>
+            <button name='rice' onclick='getT2(this.name);titleC(this.name)'>
+                밥
+            </button>
+            <button name='soup' onclick='getT2(this.name);titleC(this.name)'>
+                탕
+            </button>
+            <button name='etc' onclick='getT2(this.name);titleC(this.name)'>
+                기타
+            </button>
+        </div>
+            <div id='spicy2'>
+            <button name='spicy' onclick='getS2(this.name);titleS(this.name);resultS()'>
+                매운거
+            </button>
+            <button name='nspicy' onclick='getS2(this.name);titleS(this.name);resultS()'>
+                안매운거
+            </button>
+        </div>
+            </div>
+        
+        <div id='menuS'>
+            <div id='spicy3'>
+            <button name='spicy' onclick='getS3(this.name);titleC(this.name)'>
+                매운거
+            </button>
+            <button name='nspicy' onclick='getS3(this.name);titleC(this.name)'>
+                안매운거
+            </button>
+        </div> 
+            </div>
+                        
+        </div>
+        </div>
+        </section>
+        
+	</body>
+</html>
