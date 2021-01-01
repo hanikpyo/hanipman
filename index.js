@@ -558,7 +558,7 @@ function getT(name) {
     const filteredArray = names.filter((value) => spices.includes(value));
     var filteredArray2 = names.filter((value) => types.includes(value));
     var filteredArray3 = filteredArray.filter((value) => types.includes(value));
-    document.getElementById('list').innerHTML = '<p>' + filteredArray2.join('</p>' + '<img src="leaf.png"></img>' + '\n' + '<p>');
+    document.getElementById('list').innerHTML =  '<div>' + '<img src="leaf.png"/>' + '<span>' + filteredArray2.join('</span>' + '</div>' + '\n' + '<div>' + '<img src="leaf.png"/>' + '<span>');
     document.getElementById('resultT').innerHTML = name;
     document.getElementById('resultT').style.display = 'block';
     document.getElementById('resultS').style.display = 'none';
@@ -580,16 +580,16 @@ function getS(name) {
     var filteredArray3 = filteredArray.filter((value) => spices.includes(value));
 
     if (document.getElementById('resultT').innerHTML == '') {
-        document.getElementById('list').innerHTML = '<p>' + '<img src="leaf.png"></img>' + filteredArray2.join('</p>' + '\n' + '<p>');
+        document.getElementById('list').innerHTML =  '<div>' + '<img src="leaf.png"/>' + '<span>' + filteredArray2.join('</span>' + '</div>' + '\n' + '<div>' + '<img src="leaf.png"/>' + '<span>');
         document.getElementById('resultT').innerHTML = name;
         document.getElementById('resultT').style.display = 'block';
     } 
     else if(document.getElementById('resultT').innerHTML.includes('매운거' || '안매운거')) {
-        document.getElementById('list').innerHTML = '<p>' + filteredArray2.join('</p>' + '\n' + '<p>');
+        document.getElementById('list').innerHTML =  '<div>' + '<img src="leaf.png"/>' + '<span>' + filteredArray2.join('</span>' + '</div>' + '\n' + '<div>' + '<img src="leaf.png"/>' + '<span>');
         document.getElementById('resultT').innerHTML = name;
     }
     else {
-        document.getElementById('list').innerHTML = '<p>' + filteredArray3.join('</p>' + '\n' + '<p>');
+        document.getElementById('list').innerHTML =  '<div>' + '<img src="leaf.png"/>' + '<span>' + filteredArray3.join('</span>' + '</div>' + '\n' + '<div>' + '<img src="leaf.png"/>' + '<span>' );
         document.getElementById('resultS').innerHTML = name;
         document.getElementById('resultS').style.display = 'block';
     
@@ -623,7 +623,7 @@ function getT2(name) {
     document.getElementById('resultS').style.display = 'none';
     document.getElementById('spicy2').style.display = 'block';
     document.getElementById('resultC').style.display = 'block';
-    document.getElementById('list').innerHTML = '<p>' + types.join('</p>' + '\n' + '<p>');
+    document.getElementById('list').innerHTML =  '<div>' + '<img src="leaf.png"/>' + '<span>' + types.join('</span>' + '</div>' + '\n' + '<div>' + '<img src="leaf.png"/>' + '<span>');
 }
 
 function getS2(name) {
@@ -636,7 +636,7 @@ function getS2(name) {
     }
 
     const filteredArray = types.filter((value) => spices.includes(value));
-    document.getElementById('list').innerHTML = '<p>' + filteredArray.join('</p>' + '\n' + '<p>');
+    document.getElementById('list').innerHTML =  '<div>' + '<img src="leaf.png"/>' + '<span>' + filteredArray.join('</span>' + '</div>' + '\n' + '<div>' + '<img src="leaf.png"/>' + '<span>');
     document.getElementById('resultS').innerHTML = name;
     document.getElementById('resultS').style.display = 'block';
 }
@@ -667,7 +667,7 @@ function getS3(name) {
         name = '안매운거';
     }
     document.getElementById('resultC').style.display = 'block';
-    document.getElementById('list').innerHTML = '<p>' + spices.join('</p>' + '\n' + '<p>');
+    document.getElementById('list').innerHTML =  '<div>' + '<img src="leaf.png"/>' + '<span>' + spices.join('</span>' + '</div>' + '\n' + '<div>' + '<img src="leaf.png"/>' + '<span>' );
 }
 
 function menuC() {
