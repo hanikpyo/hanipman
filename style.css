@@ -9,6 +9,10 @@ body {
     padding-top: 9rem;
     padding-bottom: 40rem;
 }
+a {
+    text-decoration: none;
+    color: inherit;
+}
 .header {
     font-size: 6rem;
     font-family: 'CookieRunOTF-Bold';
@@ -62,6 +66,10 @@ input[id='tab03']:checked ~ #menuS {
 }
 input[id='tab04']:checked ~ #ran {
     display: block;
+}
+input[id='tab05']:checked ~ #disqus_thread {
+    display: block;
+    height: 100%;
 }
 .menutab {
     padding: 0;
@@ -200,6 +208,9 @@ input[id='tab04']:checked ~ #ran {
 .adv {
     width: 160px;
     margin: 0 auto;
+}
+#disqus_thread {
+    display: none;
 }
 @font-face {
     font-family: 'CookieRunOTF-Bold';

@@ -3,11 +3,12 @@
     <head>
         <link rel="stylesheet" href="style.css" />
         <script src="index.js"></script>
+        <title>오늘 뭐 먹지?</title>
     </head>
     <body>
         <header>
             <div class="header">
-                오늘 뭐 먹지?
+                <a href='index.html'>오늘 뭐 먹지?</a>
             </div>
         </header>
 
@@ -100,9 +101,11 @@
                     <label for='tab03'>맵기</label>
                     <input type='radio' name='tabmenu' id='tab04'>
                     <label for='tab04'>랜덤</label>
+                    <input type='radio' name='tabmenu' id='tab05' onclick='window.location.assign("feedback.html")'>
+                    <label for='tab05'>피드백</label>
                     <iframe class='coupang'
                         src="https://coupa.ng/bOL8jE"
-                        width="50%"
+                        width="45%"
                         height="36"
                         frameborder="0"
                         scrolling="no"
