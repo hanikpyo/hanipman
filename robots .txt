@@ -1,0 +1,3 @@
+User-agent: *
+Allow:/
+Sitemap: https://hanipman.netlify.app/sitemap.xml
