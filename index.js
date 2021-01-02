@@ -48,7 +48,7 @@ var korea = [
     '순두부찌개',
     'LA갈비',
     '치킨',
-    '김치볶음밥'
+    '김치볶음밥',
 ];
 
 var china = [
@@ -72,7 +72,7 @@ var china = [
     '지파이',
     '마라샹궈',
     '멘보샤',
-    '완자탕'
+    '완자탕',
 ];
 
 var western = [
@@ -136,7 +136,7 @@ var japan = [
     '라멘',
     '가라아게',
     '샤부샤부',
-    '탄탄멘'
+    '탄탄멘',
 ];
 
 var SEA = [
@@ -222,7 +222,7 @@ var noodle = [
     '로제 파스타',
     '바질페스토 파스타',
     '크림 파스타',
-    '탄탄멘'
+    '탄탄멘',
 ];
 var rice = [
     '비빔밥',
@@ -237,7 +237,7 @@ var rice = [
     '규동',
     '가츠동',
     '나시고랭',
-    '김치볶음밥'
+    '김치볶음밥',
 ];
 var soup = [
     '갈비탕',
@@ -254,7 +254,7 @@ var soup = [
     '똠얌꿍',
     '샤부샤부',
     '국밥',
-    '완자탕'
+    '완자탕',
 ];
 var etc = [
     '떡볶이',
@@ -333,7 +333,7 @@ var spicy = [
     '로제 파스타',
     '감바스',
     '김치볶음밥',
-    '탄탄멘'
+    '탄탄멘',
 ];
 var nspicy = [
     '족발',
@@ -437,9 +437,10 @@ var nspicy = [
     '가라아게',
     '샤부샤부',
     '치킨',
-    '완자탕'
+    '완자탕',
 ];
 
+var total = korea + china + japan + western + SEA;
 var names;
 var types;
 var spices;
@@ -460,7 +461,11 @@ function getC(name) {
         names = SEA;
     }
     document.getElementById('resultC').style.display = 'block';
-    document.getElementById('list').innerHTML = '<div>' + '<img src="leaf.png"/>' + '<span>' + names.join('</span>' + '</div>' + '\n' + '<div>' + '<img src="leaf.png"/>' + '<span>' );
+    document.getElementById('list').innerHTML =
+        '<div>' +
+        '<img src="leaf.png"/>' +
+        '<span>' +
+        names.join('</span>' + '</div>' + '\n' + '<div>' + '<img src="leaf.png"/>' + '<span>');
     types = '';
     spices = '';
 }
@@ -551,14 +556,19 @@ function getT(name) {
         name = '햄버거';
     } else if (name == 'chicken') {
         types = chicken;
-         name = '치킨';
+        name = '치킨';
     }
-    
 
     const filteredArray = names.filter((value) => spices.includes(value));
     var filteredArray2 = names.filter((value) => types.includes(value));
     var filteredArray3 = filteredArray.filter((value) => types.includes(value));
-    document.getElementById('list').innerHTML =  '<div>' + '<img src="leaf.png"/>' + '<span>' + filteredArray2.join('</span>' + '</div>' + '\n' + '<div>' + '<img src="leaf.png"/>' + '<span>');
+    document.getElementById('list').innerHTML =
+        '<div>' +
+        '<img src="leaf.png"/>' +
+        '<span>' +
+        filteredArray2.join(
+            '</span>' + '</div>' + '\n' + '<div>' + '<img src="leaf.png"/>' + '<span>'
+        );
     document.getElementById('resultT').innerHTML = name;
     document.getElementById('resultT').style.display = 'block';
     document.getElementById('resultS').style.display = 'none';
@@ -574,28 +584,42 @@ function getS(name) {
         spices = nspicy;
         name = '안매운거';
     }
-    
+
     var filteredArray = names.filter((value) => types.includes(value));
     var filteredArray2 = names.filter((value) => spices.includes(value));
     var filteredArray3 = filteredArray.filter((value) => spices.includes(value));
 
     if (document.getElementById('resultT').innerHTML == '') {
-        document.getElementById('list').innerHTML =  '<div>' + '<img src="leaf.png"/>' + '<span>' + filteredArray2.join('</span>' + '</div>' + '\n' + '<div>' + '<img src="leaf.png"/>' + '<span>');
+        document.getElementById('list').innerHTML =
+            '<div>' +
+            '<img src="leaf.png"/>' +
+            '<span>' +
+            filteredArray2.join(
+                '</span>' + '</div>' + '\n' + '<div>' + '<img src="leaf.png"/>' + '<span>'
+            );
         document.getElementById('resultT').innerHTML = name;
         document.getElementById('resultT').style.display = 'block';
-    } 
-    else if(document.getElementById('resultT').innerHTML.includes('매운거' || '안매운거')) {
-        document.getElementById('list').innerHTML =  '<div>' + '<img src="leaf.png"/>' + '<span>' + filteredArray2.join('</span>' + '</div>' + '\n' + '<div>' + '<img src="leaf.png"/>' + '<span>');
+    } else if (document.getElementById('resultT').innerHTML.includes('매운거' || '안매운거')) {
+        document.getElementById('list').innerHTML =
+            '<div>' +
+            '<img src="leaf.png"/>' +
+            '<span>' +
+            filteredArray2.join(
+                '</span>' + '</div>' + '\n' + '<div>' + '<img src="leaf.png"/>' + '<span>'
+            );
         document.getElementById('resultT').innerHTML = name;
-    }
-    else {
-        document.getElementById('list').innerHTML =  '<div>' + '<img src="leaf.png"/>' + '<span>' + filteredArray3.join('</span>' + '</div>' + '\n' + '<div>' + '<img src="leaf.png"/>' + '<span>' );
+    } else {
+        document.getElementById('list').innerHTML =
+            '<div>' +
+            '<img src="leaf.png"/>' +
+            '<span>' +
+            filteredArray3.join(
+                '</span>' + '</div>' + '\n' + '<div>' + '<img src="leaf.png"/>' + '<span>'
+            );
         document.getElementById('resultS').innerHTML = name;
         document.getElementById('resultS').style.display = 'block';
-    
     }
 }
-
 
 // menu
 
@@ -623,7 +647,11 @@ function getT2(name) {
     document.getElementById('resultS').style.display = 'none';
     document.getElementById('spicy2').style.display = 'block';
     document.getElementById('resultC').style.display = 'block';
-    document.getElementById('list').innerHTML =  '<div>' + '<img src="leaf.png"/>' + '<span>' + types.join('</span>' + '</div>' + '\n' + '<div>' + '<img src="leaf.png"/>' + '<span>');
+    document.getElementById('list').innerHTML =
+        '<div>' +
+        '<img src="leaf.png"/>' +
+        '<span>' +
+        types.join('</span>' + '</div>' + '\n' + '<div>' + '<img src="leaf.png"/>' + '<span>');
 }
 
 function getS2(name) {
@@ -636,7 +664,13 @@ function getS2(name) {
     }
 
     const filteredArray = types.filter((value) => spices.includes(value));
-    document.getElementById('list').innerHTML =  '<div>' + '<img src="leaf.png"/>' + '<span>' + filteredArray.join('</span>' + '</div>' + '\n' + '<div>' + '<img src="leaf.png"/>' + '<span>');
+    document.getElementById('list').innerHTML =
+        '<div>' +
+        '<img src="leaf.png"/>' +
+        '<span>' +
+        filteredArray.join(
+            '</span>' + '</div>' + '\n' + '<div>' + '<img src="leaf.png"/>' + '<span>'
+        );
     document.getElementById('resultS').innerHTML = name;
     document.getElementById('resultS').style.display = 'block';
 }
@@ -667,30 +701,85 @@ function getS3(name) {
         name = '안매운거';
     }
     document.getElementById('resultC').style.display = 'block';
-    document.getElementById('list').innerHTML =  '<div>' + '<img src="leaf.png"/>' + '<span>' + spices.join('</span>' + '</div>' + '\n' + '<div>' + '<img src="leaf.png"/>' + '<span>' );
+    document.getElementById('list').innerHTML =
+        '<div>' +
+        '<img src="leaf.png"/>' +
+        '<span>' +
+        spices.join('</span>' + '</div>' + '\n' + '<div>' + '<img src="leaf.png"/>' + '<span>');
 }
 
-function menuC() {
-    document.getElementById('country').style.display = 'block';
-    document.getElementById('menuT').style.display = 'none'
-    document.getElementById('menuS').style.display = 'none'
-    document.getElementById('tab01').style.backgroundColor = 'white';
-    document.getElementById('tab02').style.backgroundColor = 'beige';
-    document.getElementById('tab03').style.backgroundColor = 'beige';
-}
-function menuT() {
-    document.getElementById('country').style.display = 'none';
-    document.getElementById('menuT').style.display = 'block';
-    document.getElementById('menuS').style.display = 'none';
-    document.getElementById('tab02').style.backgroundColor = 'white';
-    document.getElementById('tab03').style.backgroundColor = 'beige';
-    document.getElementById('tab01').style.backgroundColor = 'beige';
-}
-function menuS() {
-    document.getElementById('country').style.display = 'none';
-    document.getElementById('menuT').style.display = 'none';
-    document.getElementById('menuS').style.display = 'block';
-    document.getElementById('tab03').style.backgroundColor = 'white';
-    document.getElementById('tab01').style.backgroundColor = 'beige';
-    document.getElementById('tab02').style.backgroundColor = 'beige';
+function ran(name) {
+    // country
+    var ranK = korea[Math.floor(Math.random() * korea.length)];
+    var ranC = china[Math.floor(Math.random() * china.length)];
+    var ranJ = japan[Math.floor(Math.random() * japan.length)];
+    var ranW = western[Math.floor(Math.random() * western.length)];
+    var ranS = SEA[Math.floor(Math.random() * SEA.length)];
+    var ranF = franchise[Math.floor(Math.random() * franchise.length)];
+    // type
+    var ranM = meat[Math.floor(Math.random() * meat.length)];
+    var ranSF = seafood[Math.floor(Math.random() * seafood.length)];
+    var ranN = noodle[Math.floor(Math.random() * noodle.length)];
+    var ranR = rice[Math.floor(Math.random() * rice.length)];
+    var ranSoup = soup[Math.floor(Math.random() * soup.length)];
+    var ranE = etc[Math.floor(Math.random() * etc.length)];
+    // spicy
+    var ranSPY = spicy[Math.floor(Math.random() * spicy.length)];
+    var ranNS = nspicy[Math.floor(Math.random() * nspicy.length)];
+
+    var ranCC = [ranK, ranC, ranW, ranJ, ranS, ranF];
+    
+    var ranTTC = ranCC[Math.floor(Math.random() * ranCC.length)];
+    var ranV;
+    
+    if (name == 'ranK') {
+        name = '한식 아무거나';
+        ranV = ranK;
+    } else if (name == 'ranCC') {
+        name = '아무거나';
+        ranV = ranTTC;
+    } else if (name == 'ranC') {
+        name = '중식 아무거나';
+        ranV = ranC;
+    } else if (name == 'ranJ') {
+        name = '일식 아무거나';
+        ranV = ranJ;
+    } else if (name == 'ranW') {
+        name = '양식 아무거나';
+        ranV = ranW;
+    } else if (name == 'ranS') {
+        name = '동남아 아무거나';
+        ranV = ranS;
+    } else if (name == 'ranF') {
+        name = '프랜차이즈 아무거나';
+        ranV = ranC;
+    } else if (name == 'ranM') {
+        name = '고기 아무거나';
+        ranV = ranC;
+    } else if (name == 'ranSF') {
+        name = '해산물 아무거나';
+        ranV = ranSF;
+    } else if (name == 'ranN') {
+        name = '면종류 아무거나';
+        ranV = ranN;
+    } else if (name == 'ranR') {
+        name = '밥종류 아무거나';
+        ranV = ranR;
+    } else if (name == 'ranSoup') {
+        name = '국종류 아무거나';
+        ranV = ranSoup;
+    } else if (name == 'ranE') {
+        name = '특이한거 아무거나';
+        ranV = ranE;
+    } else if (name == 'ranSPY') {
+        name = '매운거 아무거나';
+        ranV = ranSPY;
+    } else if (name == 'ranNS') {
+        name = '안매운거 아무거나';
+        ranV = ranNS;
+    }
+    document.getElementById('resultC').style.display = 'block';
+    document.getElementById('resultC').textContent = name;
+    document.getElementById('list').innerHTML =
+        '<div>' + '<img src="leaf.png"/>' + '<span>' + ranV + '</span>' + '</div>';
 }

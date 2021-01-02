@@ -7,7 +7,7 @@ body {
     padding: 0;
     margin: 0;
     padding-top: 7.5rem;
-    padding-bottom: 15rem;
+    padding-bottom: 35rem;
 }
 .header {
     font-size: 6rem;
@@ -17,28 +17,55 @@ body {
     top: 0;
     width: 100%;
     background-color: #8fb8cc;
+    z-index: 1;
 }
 .menu {
-    display: grid;
-    grid-template-columns: 1fr 30fr;
     position:fixed;
     bottom:0;
     width:100vw;
     padding: 0;
-    background-color: beige;
+    background-color: white;
+    margin: 0;
+    height: 31vh;
+    font-family: 'KyoboHand';
 }
-.menutab button{
-    padding: 1rem;
-    width: 100%;
+.coupang {
+    margin-top: 0.7rem;
+    float: right;
+}
+
+input[type='radio'] {
+    display:none;
+}
+input[type='radio'] + label {
+    display: inline-block;
+    background: white;
+    color: black;
     font-size: 3rem;
-    border: none;
-    outline: none;
-    line-height: 3rem;
+    cursor: pointer;
+    padding: 0.1rem 1rem;
+}
+input[type='radio']:checked + label {
+    background: #a1ffba;
+    color: #000;
+    box-shadow: 0px 0px 10px 0px white;
+}
+input[id='tab01']:checked ~ #country {
+    display: block;
+}
+input[id='tab02']:checked ~ #menuT {
+    display: block;
+}
+input[id='tab03']:checked ~ #menuS {
+    display: block;
+}
+input[id='tab04']:checked ~ #ran {
+    display: block;
 }
 .menutab {
-    height: 100%;
+    padding: 0;
 }
-.menulist button {
+.menutab button {
     width: fit-content;
     border: none;
     border-radius: 0.5rem;
@@ -47,8 +74,10 @@ body {
     font-size: 3rem;
     padding: 0.5rem 1rem;
     outline: none;
+    font-family: 'MapoPeacefull';
 }
 #country {
+    display: none;
     padding: 1.5rem;
     background: white;
     line-height: 2rem;
@@ -88,74 +117,105 @@ body {
     line-height: 2rem;
     border-radius: 0.3rem;
 }
+#ran {
+    display: none;
+    padding: 1.5rem;
+    background: white;
+    line-height: 2rem;
+    border-radius: 0.3rem;
+}
+#ran button {
+    margin: 0.5rem;
+}
 
 .result {
     display: grid;
     height: 100%;
-    grid-template-columns: 4fr 6fr;
+    grid-template-columns: 7fr 3fr;
+    font-family: 'Bazzi';
 }
 .resultN {
     margin: 1.5rem;
     font-size: 3rem;
     margin-left: auto;
-    margin-right: 0.5rem;
+    margin-right: 1rem;
     grid-column: 1/4;
 }
 .resultN span {
     width: fit-content;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     border-bottom-right-radius: 0;
     background-color: #ffdd00;
     padding:  0.5rem 1rem;
     margin-bottom: 0.5rem;
+    margin-left: auto;
 }
 
 .lists {
     display: grid;
 }
 #list {
-    flex: 0.35;
     font-size: 3rem;
-    padding-left: 1rem;
     text-align: left;
 }
 #list div {
     margin: 2rem;
 }
 #list img {
-    width: 3.5rem;
-    height: 3.5rem;
-    border-radius: 50%;
-    background-color: grey;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 40%;
+    background-color: #e6f8ff;
     margin-right: 1rem;
     object-fit: contain;
 }
 #list span {
     width: fit-content;
     padding:  0.5rem 1rem;
-    border-radius: 0.5rem;
-    border-bottom-left-radius: 0;
+    border-radius: 1rem;
+    border-top-left-radius: 0;
     background-color: white;
 }
-.ad1 {
-   width: 14rem;
-    margin: 0 auto;
+.adh {
+    grid-column: 1/4;
 }
 .ad2 {
-   width: 18rem;
+   width: 300px;
     margin: 0 auto;
 }
 .ad3 {
-    width: 18rem;
+    width: 320px;
     margin: 0 auto;
 }
 .ad4 {
-    width: 14rem;
+    width: 320px;
+    margin: 0 auto;
+}
+.adv {
+    width: 160px;
     margin: 0 auto;
 }
 @font-face {
     font-family: 'CookieRunOTF-Bold';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bazzi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/Bazzi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KyoboHand';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/KyoboHand.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MapoPeacefull';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoPeacefullA.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
