@@ -752,10 +752,10 @@ function ran(name) {
         ranV = ranS;
     } else if (name == 'ranF') {
         name = '프랜차이즈 아무거나';
-        ranV = ranC;
+        ranV = ranF;
     } else if (name == 'ranM') {
         name = '고기 아무거나';
-        ranV = ranC;
+        ranV = ranM;
     } else if (name == 'ranSF') {
         name = '해산물 아무거나';
         ranV = ranSF;
