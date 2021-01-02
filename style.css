@@ -7,7 +7,7 @@ body {
     padding: 0;
     margin: 0;
     padding-top: 7.5rem;
-    padding-bottom: 35rem;
+    padding-bottom: 40rem;
 }
 .header {
     font-size: 6rem;
@@ -26,7 +26,7 @@ body {
     padding: 0;
     background-color: white;
     margin: 0;
-    height: 31vh;
+    height: 25vh;
     font-family: 'KyoboHand';
 }
 .coupang {
