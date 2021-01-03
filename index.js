@@ -696,6 +696,8 @@ function getS3(name) {
         name = '안매운거';
     }
     document.getElementById('resultC').style.display = 'block';
+    document.getElementById('resultT').style.display = 'none';
+    document.getElementById('resultS').style.display = 'none';
     document.getElementById('list').innerHTML =
         '<div>' +
         '<img src="leaf.png"/>' +
