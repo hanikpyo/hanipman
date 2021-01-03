@@ -777,6 +777,8 @@ function ran(name) {
     document.getElementById('resultC').textContent = name;
     document.getElementById('list').innerHTML =
         '<div>' + '<img src="leaf.png"/>' + '<span>' + ranV + '</span>' + '</div>';
+    document.getElementById('resultT').style.display = 'none';
+    document.getElementById('resultS').style.display = 'none';
 }
 
 function tab() {
@@ -784,10 +786,6 @@ function tab() {
     document.getElementById('spicy').style.display = 'none';
     document.getElementById('fran').style.display = 'none';
     document.getElementById('spicy2').style.display = 'none';
-    document.getElementById('list').innerHTML = '';
-    document.getElementById('resultC').style.display = 'none';
-    document.getElementById('resultT').style.display = 'none';
-    document.getElementById('resultS').style.display = 'none';
 }
 
 
