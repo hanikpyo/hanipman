@@ -35,8 +35,8 @@ a {
     font-family: 'KyoboHand';
 }
 .coupang {
-    margin-top: 0.7rem;
     float: right;
+    height: 100%;
 }
 
 input[type='radio'] {
