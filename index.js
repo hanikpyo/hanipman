@@ -588,37 +588,29 @@ function getS(name) {
     var filteredArray = names.filter((value) => types.includes(value));
     var filteredArray2 = names.filter((value) => spices.includes(value));
     var filteredArray3 = filteredArray.filter((value) => spices.includes(value));
-
-    if (document.getElementById('resultT').innerHTML == '') {
-        document.getElementById('list').innerHTML =
+if(filteredArray3 == '') {
+    document.getElementById('list').innerHTML =
             '<div>' +
             '<img src="leaf.png"/>' +
             '<span>' +
-            filteredArray2.join(
-                '</span>' + '</div>' + '\n' + '<div>' + '<img src="leaf.png"/>' + '<span>'
-            );
-        document.getElementById('resultT').innerHTML = name;
-        document.getElementById('resultT').style.display = 'block';
-    } else if (document.getElementById('resultT').innerHTML.includes('매운거' || '안매운거')) {
-        document.getElementById('list').innerHTML =
-            '<div>' +
-            '<img src="leaf.png"/>' +
-            '<span>' +
-            filteredArray2.join(
-                '</span>' + '</div>' + '\n' + '<div>' + '<img src="leaf.png"/>' + '<span>'
-            );
-        document.getElementById('resultT').innerHTML = name;
-    } else {
-        document.getElementById('list').innerHTML =
+            '생각나는게 없네'
+                '</span>' + '</div>' + '\n' + '<div>' + '<img src="leaf.png"/>' + '<span>';
+    document.getElementById('resultS').innerHTML = name;
+    document.getElementById('resultS').style.display = 'block';
+} else {
+    document.getElementById('list').innerHTML =
             '<div>' +
             '<img src="leaf.png"/>' +
             '<span>' +
             filteredArray3.join(
                 '</span>' + '</div>' + '\n' + '<div>' + '<img src="leaf.png"/>' + '<span>'
             );
-        document.getElementById('resultS').innerHTML = name;
-        document.getElementById('resultS').style.display = 'block';
-    }
+    document.getElementById('resultS').innerHTML = name;
+    document.getElementById('resultS').style.display = 'block';
+}
+    
+    
+    
 }
 
 // menu
@@ -690,6 +682,9 @@ function hideR() {
     document.getElementById('resultT').style.display = 'none';
     document.getElementById('resultS').style.display = 'none';
     document.getElementById('list').innerHTML = '';
+}
+function hideS() {
+    document.getElementById('spicy').style.display = 'none';
 }
 
 function getS3(name) {
@@ -783,3 +778,24 @@ function ran(name) {
     document.getElementById('list').innerHTML =
         '<div>' + '<img src="leaf.png"/>' + '<span>' + ranV + '</span>' + '</div>';
 }
+
+function tab() {
+    document.getElementById('type').style.display = 'none';
+    document.getElementById('spicy').style.display = 'none';
+    document.getElementById('fran').style.display = 'none';
+    document.getElementById('spicy2').style.display = 'none';
+    document.getElementById('list').innerHTML = '';
+    document.getElementById('resultC').style.display = 'none';
+    document.getElementById('resultT').style.display = 'none';
+    document.getElementById('resultS').style.display = 'none';
+}
+
+
+
+
+
+
+
+
+
+

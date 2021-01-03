@@ -13,6 +13,7 @@
 <meta property="og:description" content="음식, 메뉴, 랜덤, 음식 리스트, 메뉴 리스트, 아침, 점심, 저녁, 뭐 먹지">
 <meta property="og:image" content="https://hanipman.netlify.app/leaf.png">
 <meta property="og:url" content="https://hanipman.netlify.app/">
+        <script src="http://code.jquery.com/jquery-2.2.2.min.js"></script>
     </head>
     <body>
         <header>
@@ -115,13 +116,13 @@
             <div class="menu">
                 <iframe src="https://coupa.ng/bORNHk" width="100%" height="36" frameborder="0" scrolling="no" referrerpolicy="unsafe-url"></iframe>
                 <div class="menutab">
-                    <input type='radio' name='tabmenu' id='tab01' checked>
+                    <input type='radio' name='tabmenu' id='tab01' onclick='tab()' checked>
                     <label for='tab01'>국가</label>
-                    <input type='radio' name='tabmenu' id='tab02'>
+                    <input type='radio' name='tabmenu' id='tab02' onclick='tab()'>
                     <label for='tab02'>종류</label>
-                    <input type='radio' name='tabmenu' id='tab03'>
+                    <input type='radio' name='tabmenu' id='tab03' onclick='tab()'>
                     <label for='tab03'>맵기</label>
-                    <input type='radio' name='tabmenu' id='tab04'>
+                    <input type='radio' name='tabmenu' id='tab04' onclick='tab()'>
                     <label for='tab04'>랜덤</label>
                     <div id="country">
                         <button
@@ -181,16 +182,16 @@
                             </button>
                         </div>
                         <div id="fran">
-                            <button name="pizza" onclick="getT(this.name)">
+                            <button name="pizza" onclick="getT(this.name);hideS()">
                                 피자
                             </button>
-                            <button name="burger" onclick="getT(this.name)">
+                            <button name="burger" onclick="getT(this.name);hideS()">
                                 햄버거
                             </button>
-                            <button name="chicken" onclick="getT(this.name)">
+                            <button name="chicken" onclick="getT(this.name);hideS()">
                                 치킨
                             </button>
-                            <button name="etc" onclick="getT(this.name)">
+                            <button name="etc" onclick="getT(this.name);hideS()">
                                 기타
                             </button>
                         </div>
