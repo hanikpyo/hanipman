@@ -16,10 +16,12 @@ a {
 ul {
     list-style: none;
     font-size: 2.5rem;
-    padding: 1rem;
+    padding-left: 1.5rem;
+    padding-top: 0.5rem;
     text-align: left;
     margin:0;
-    font-family: 'CookieRun-Regular';
+    font-family: '777Balsamtint';
+    line-height: 3.5rem;
 }
 .header {
     font-size: 6rem;
@@ -65,11 +67,6 @@ input[type='checkbox']:checked + label + div {
     margin: 0;
     height: 30vh;
     font-family: 'KyoboHand';
-}
-.coupang {
-    float: right;
-    height: 2rem;
-    width: 40%;
 }
 
 input[type='radio'] {
@@ -117,6 +114,9 @@ input[id='tab05']:checked ~ #disqus_thread {
     padding: 0.5rem 1rem;
     outline: none;
     font-family: 'MapoPeacefull';
+}
+.coupang {
+    height: 100%;
 }
 #country {
     display: none;
@@ -275,6 +275,13 @@ input[id='tab05']:checked ~ #disqus_thread {
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: '777Balsamtint';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/777Balsamtint.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*responsive*/
 /* Desktop Device */
 @media all and (min-width:1025px) {

@@ -7,6 +7,16 @@ a {
     text-decoration: none;
     color: inherit;
 }
+ul {
+    list-style: none;
+    font-size: 2.5rem;
+    padding-left: 1.5rem;
+    padding-top: 0.5rem;
+    text-align: left;
+    margin:0;
+    font-family: '777Balsamtint';
+    line-height: 3.5rem;
+}
 .title {
     font-family: 'CookieRunOTF-Bold';
     font-size: 6rem;
@@ -18,12 +28,37 @@ a {
     border-bottom: 1px solid #0b3963;
     background-color: #8fb8cc;
 }
-.title img {
+#arrow {
     object-fit: contain;
     width: 5rem;
     position: absolute;
     left: 1rem;
     top: 1.5rem;
+}
+input[type='checkbox'] {
+    display: none;
+}
+input[type='checkbox'] + label {
+    position: absolute;
+    right: 1rem;
+    object-fit: contain;
+    width: 4rem;
+}
+.settingbar {
+    width: 15rem;
+    height: 15rem;
+    position: fixed;
+    background: white;
+    right: -3000px;
+    z-index: 1;
+    transition: all .35s;
+    top: 7rem;
+    box-shadow: 0px 0px 10px 0px lightgray;
+    border-radius: 0.2rem;
+}
+
+input[type='checkbox']:checked + label + div {
+    right: 1rem;
 }
 .content {
     background-color: #8fb8cc;
@@ -68,6 +103,18 @@ a {
 @font-face {
     font-family: 'MapoPeacefull';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoPeacefullA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'CookieRun-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: '777Balsamtint';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/777Balsamtint.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
