@@ -6,29 +6,35 @@
         <script src="index.js"></script>
         <title>오늘 뭐 먹지?</title>
         <meta name="naver-site-verification" content="3b1949355ccc16a6c7380093c637e4532cebf7f4" />
-        <link rel="canonical" href="http://hanipman.netlify.app">
-        <meta name="description" content="오늘 뭐 먹지?, 메뉴 골라주기, 랜덤 메뉴, 점심, 아침, 저녁, 한끼, 식사, 뭐 먹지, 아무거나, 음식 리스트">
-        <meta property="og:type" content="website"> 
-<meta property="og:title" content="오늘 뭐 먹지?">
-<meta property="og:description" content="음식, 메뉴, 랜덤, 음식 리스트, 메뉴 리스트, 아침, 점심, 저녁, 뭐 먹지">
-<meta property="og:image" content="https://hanipman.netlify.app/leaf.png">
-<meta property="og:url" content="https://hanipman.netlify.app/">
+        <link rel="canonical" href="http://hanipman.netlify.app" />
+        <meta
+            name="description"
+            content="오늘 뭐 먹지?, 메뉴 골라주기, 랜덤 메뉴, 점심, 아침, 저녁, 한끼, 식사, 뭐 먹지, 아무거나, 음식 리스트"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="오늘 뭐 먹지?" />
+        <meta
+            property="og:description"
+            content="음식, 메뉴, 랜덤, 음식 리스트, 메뉴 리스트, 아침, 점심, 저녁, 뭐 먹지"
+        />
+        <meta property="og:image" content="https://hanipman.netlify.app/leaf.png" />
+        <meta property="og:url" content="https://hanipman.netlify.app/" />
         <script src="http://code.jquery.com/jquery-2.2.2.min.js"></script>
     </head>
     <body>
         <header>
             <div class="header">
-                <a href='index.html'>오늘 뭐 먹지?</a>
-                <input type='checkbox' id='setting'>
-                <label for='setting'>
-                    <img src='settings.svg'>
+                <a href="index.html">오늘 뭐 먹지?</a>
+                <input type="checkbox" id="setting" />
+                <label for="setting">
+                    <img src="settings.svg" />
                 </label>
-                <div class='settingbar'>
+                <div class="settingbar">
                     <ul>
-                        <li><a href='feedback.html'>피드백</a></li>
-                        <li><a href='https://hanipanimal.netlify.app'>동물상테스트</a></li>
-                        <li><a href='https://haniplotto.netlify.app'>로또 추첨기</a></li>
-                        <li><a href='https://hanipkoonghap.netlify.app'>궁합테스트</a></li>
+                        <li><a href="feedback.html">피드백</a></li>
+                        <li><a href="https://hanipanimal.netlify.app">동물상테스트</a></li>
+                        <li><a href="https://haniplotto.netlify.app">로또 추첨기</a></li>
+                        <li><a href="https://hanipkoonghap.netlify.app">궁합테스트</a></li>
                     </ul>
                 </div>
             </div>
@@ -114,71 +120,93 @@
                 </div>
             </div>
             <div class="menu">
-                <iframe src="https://coupa.ng/bORNHk" width="100%" height="36" frameborder="0" scrolling="no" referrerpolicy="unsafe-url"></iframe>
+                <iframe
+                    src="https://coupa.ng/bORNHk"
+                    width="100%"
+                    height="36"
+                    frameborder="0"
+                    scrolling="no"
+                    referrerpolicy="unsafe-url"
+                ></iframe>
                 <div class="menutab">
-                    <input type='radio' name='tabmenu' id='tab01' onclick='tab()' checked>
-                    <label for='tab01'>국가</label>
-                    <input type='radio' name='tabmenu' id='tab02' onclick='tab()'>
-                    <label for='tab02'>종류</label>
-                    <input type='radio' name='tabmenu' id='tab03' onclick='tab()'>
-                    <label for='tab03'>맵기</label>
-                    <input type='radio' name='tabmenu' id='tab04' onclick='tab()'>
-                    <label for='tab04'>랜덤</label>
+                    <input type="radio" name="tabmenu" id="tab01" onclick="tab()" checked />
+                    <label for="tab01">국가</label>
+                    <input type="radio" name="tabmenu" id="tab02" onclick="tab()" />
+                    <label for="tab02">종류</label>
+                    <input type="radio" name="tabmenu" id="tab03" onclick="tab()" />
+                    <label for="tab03">맵기</label>
+                    <input type="radio" name="tabmenu" id="tab04" onclick="tab()" />
+                    <label for="tab04">랜덤</label>
                     <div id="country">
                         <button
-                            name="korea"
+                            name="korea" id='CK'
                             onclick="getC(this.name);show();titleC(this.name);hideT()"
                         >
-                            한식
+                            <img src="img/korean.png" /><p>
+                        한식
+                        </p>
                         </button>
                         <button
                             name="china"
                             onclick="getC(this.name);show();titleC(this.name);hideT()"
                         >
-                            중식
+                            <img src="img/chinese.png" /><p>
+                        중식
+                        </p>
                         </button>
                         <button
                             name="japan"
                             onclick="getC(this.name);show();titleC(this.name);hideT()"
                         >
-                            일식
+                            <img src="img/japanese.png" /><p>
+                        일식
+                        </p>
                         </button>
                         <button
                             name="western"
                             onclick="getC(this.name);show();titleC(this.name);hideT()"
                         >
-                            양식
+                            <img src="img/steak.png" /><p>
+                        양식
                         </button>
                         <button
                             name="SEA"
                             onclick="getC(this.name);show();titleC(this.name);hideT()"
                         >
-                            동남아
+                            <img src="img/SEA.png" /><p>
+                        동남아
                         </button>
                         <button
                             name="franchise"
                             onclick="getC(this.name);shows();titleC(this.name);hideT()"
                         >
-                            프랜차이즈
+                            <img src="img/franchise.png" /><p>
+                        프랜차이즈
                         </button>
                         <div id="type">
                             <button name="meat" onclick="getT(this.name)">
-                                고기
+                                <img src="img/meat.png" /><p>
+                                고기</p>
                             </button>
                             <button name="seafood" onclick="getT(this.name)">
-                                해산물
+                                <img src="img/seafood.png" /><p>
+                                해산물</p>
                             </button>
                             <button name="noodle" onclick="getT(this.name)">
-                                면
+                                <img src="img/noodle.png" /><p>
+                                면</p>
                             </button>
                             <button name="rice" onclick="getT(this.name)">
-                                밥
+                                <img src="img/rice2.png" /><p>
+                                밥</p>
                             </button>
                             <button name="soup" onclick="getT(this.name)">
-                                탕
+                                <img src="img/soup.jpg" /><p>
+                                탕</p>
                             </button>
                             <button name="etc" onclick="getT(this.name)">
-                                기타
+                                <img src="img/etc.png" /><p>
+                                기타</p>
                             </button>
                         </div>
                         <div id="fran">
@@ -197,32 +225,40 @@
                         </div>
                         <div id="spicy">
                             <button name="spicy" onclick="getS(this.name)">
-                                매운거
+                                <img src="img/spicy.png" /><p>
+                        매운거
                             </button>
                             <button name="nspicy" onclick="getS(this.name)">
-                                안매운거
+                                <img src="img/nspicy.png" /><p>
+                        안매운거
                             </button>
                         </div>
                     </div>
                     <div id="menuT">
                         <div id="type2">
                             <button name="meat" onclick="getT2(this.name);titleC(this.name)">
-                                고기
+                                <img src="img/meat.png" /><p>
+                                고기</p>
                             </button>
                             <button name="seafood" onclick="getT2(this.name);titleC(this.name)">
-                                해산물
+                                <img src="img/seafood.png" /><p>
+                                해산물</p>
                             </button>
                             <button name="noodle" onclick="getT2(this.name);titleC(this.name)">
-                                면
+                                <img src="img/noodle.png" /><p>
+                                면</p>
                             </button>
                             <button name="rice" onclick="getT2(this.name);titleC(this.name)">
-                                밥
+                                <img src="img/rice2.png" /><p>
+                                밥</p>
                             </button>
                             <button name="soup" onclick="getT2(this.name);titleC(this.name)">
-                                탕
+                                <img src="img/soup.jpg" /><p>
+                                탕</p>
                             </button>
                             <button name="etc" onclick="getT2(this.name);titleC(this.name)">
-                                기타
+                                <img src="img/etc.png" /><p>
+                                기타</p>
                             </button>
                         </div>
                         <div id="spicy2">
@@ -244,60 +280,66 @@
                                 안매운거
                             </button>
                         </div>
-                </div>
-                <div id='ran'>
-                    <button name='ranCC' onclick='ran(this.name)'>
-                        전체
-                    </button>
-                    <button name='ranK' onclick='ran(this.name)'>
-                        한식
-                    </button>
-                    <button name='ranC' onclick='ran(this.name)'>
-                        중식
-                    </button>
-                    <button name='ranJ' onclick='ran(this.name)'>
-                        일식
-                    </button>
-                    <button name='ranW' onclick='ran(this.name)'>
-                        양식
-                    </button>
-                    <button name='ranS' onclick='ran(this.name)'>
-                        동남아
-                    </button>
-                    <button name='ranF' onclick='ran(this.name)'>
-                        프랜차이즈
-                    </button>
-                    <button name='ranM' onclick='ran(this.name)'>
-                        고기
-                    </button>
-                    <button name='ranSF' onclick='ran(this.name)'>
-                        해산물
-                    </button>
-                    <button name='ranN' onclick='ran(this.name)'>
-                        면
-                    </button>
-                    <button name='ranR' onclick='ran(this.name)'>
-                        밥
-                    </button>
-                    <button name='ranSoup' onclick='ran(this.name)'>
-                        탕
-                    </button>
-                    <button name='ranE' onclick='ran(this.name)'>
-                        기타
-                    </button>
-                    <button name='ranSPY' onclick='ran(this.name)'>
-                        매운거
-                    </button>
-                    <button name='ranNS' onclick='ran(this.name)'>
-                        안매운거
-                    </button>
+                    </div>
+                    <div id="ran">
+                        <button name="ranCC" onclick="ran(this.name)">
+                            전체
+                        </button>
+                        <button name="ranK" onclick="ran(this.name)">
+                            한식
+                        </button>
+                        <button name="ranC" onclick="ran(this.name)">
+                            중식
+                        </button>
+                        <button name="ranJ" onclick="ran(this.name)">
+                            일식
+                        </button>
+                        <button name="ranW" onclick="ran(this.name)">
+                            양식
+                        </button>
+                        <button name="ranS" onclick="ran(this.name)">
+                            동남아
+                        </button>
+                        <button name="ranF" onclick="ran(this.name)">
+                            프랜차이즈
+                        </button>
+                        <button name="ranM" onclick="ran(this.name)">
+                            고기
+                        </button>
+                        <button name="ranSF" onclick="ran(this.name)">
+                            해산물
+                        </button>
+                        <button name="ranN" onclick="ran(this.name)">
+                            면
+                        </button>
+                        <button name="ranR" onclick="ran(this.name)">
+                            밥
+                        </button>
+                        <button name="ranSoup" onclick="ran(this.name)">
+                            탕
+                        </button>
+                        <button name="ranE" onclick="ran(this.name)">
+                            기타
+                        </button>
+                        <button name="ranSPY" onclick="ran(this.name)">
+                            매운거
+                        </button>
+                        <button name="ranNS" onclick="ran(this.name)">
+                            안매운거
+                        </button>
                     </div>
                     <script src="https://ads-partners.coupang.com/g.js"></script>
 
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>
-	new PartnersCoupang.G({"id":320919,"template":"carousel","trackingCode":"AF5265252","width":"400","height":"90"});
-</script>
+                    <script src="https://ads-partners.coupang.com/g.js"></script>
+                    <script>
+                        new PartnersCoupang.G({
+                            id: 320919,
+                            template: 'carousel',
+                            trackingCode: 'AF5265252',
+                            width: '400',
+                            height: '90',
+                        });
+                    </script>
                 </div>
             </div>
         </section>

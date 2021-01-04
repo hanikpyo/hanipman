@@ -107,15 +107,21 @@ input[id='tab05']:checked ~ #disqus_thread {
     padding: 0;
 }
 .menutab button {
-    width: fit-content;
-    border: none;
-    border-radius: 0.5rem;
-    border-bottom-right-radius: 0;
-    background-color: #ffdd00;
-    font-size: 1.5rem;
-    padding: 0.5rem 1rem;
+    border-radius: 100%;
     outline: none;
-    font-family: 'MapoPeacefull';
+    border: none;
+    background: none;
+}
+.menutab img {
+    width: 4rem;
+    height: 4rem;
+    object-fit: contain;
+    background: lightgray;
+    border-radius: 40%;
+} .menutab p {
+    text-align: center;
+    margin: -1rem;
+    font-size: 0.5rem;
 }
 .coupang {
     height: 100%;
