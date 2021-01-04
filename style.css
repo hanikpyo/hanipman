@@ -6,7 +6,7 @@ body {
     background-color: #8fb8cc;
     padding: 0;
     margin: 0;
-    padding-top: 9rem;
+    padding-top: 11rem;
     padding-bottom: 40rem;
 }
 a {
@@ -29,23 +29,25 @@ ul {
     text-align: center;
     position: fixed;
     top: 0;
+    height: 10rem;
     width: 100%;
-    background-color: #8fb8cc;
+    background-color: #ffbb94;
     z-index: 1;
-    border-bottom: 1px solid #0b3963;
+    box-shadow: 0px 0px 10px 0px lightgray;
 }
 input[type='checkbox'] {
     display: none;
 }
 input[type='checkbox'] + label {
     position: absolute;
-    right: 1rem;
+    right: 2rem;
     object-fit: contain;
     width: 4rem;
+    top: 0.5rem;
 }
 .settingbar {
     width: 15rem;
-    height: 15rem;
+    height: 16rem;
     position: fixed;
     background: white;
     right: -3000px;
@@ -65,7 +67,7 @@ input[type='checkbox']:checked + label + div {
     padding: 0;
     background-color: white;
     margin: 0;
-    height: 30vh;
+    height: 34vh;
     font-family: 'KyoboHand';
 }
 
@@ -113,18 +115,15 @@ input[id='tab05']:checked ~ #disqus_thread {
     background: none;
 }
 .menutab img {
-    width: 4rem;
-    height: 4rem;
+    width: 6rem;
+    height: 6rem;
     object-fit: contain;
     background: lightgray;
     border-radius: 40%;
 } .menutab p {
     text-align: center;
     margin: -1rem;
-    font-size: 0.5rem;
-}
-.coupang {
-    height: 100%;
+    font-size: 1rem;
 }
 #country {
     display: none;
@@ -184,6 +183,16 @@ input[id='tab05']:checked ~ #disqus_thread {
     grid-template-columns: 6fr 4fr;
     font-family: 'Bazzi';
 }
+#resultH {
+    grid-column: 1/4;
+    font-size: 5rem;
+    text-align: center;
+    margin: 2rem 7rem;
+    border-radius: 1rem;
+    background: white;
+    padding: 1rem;
+    box-shadow: 0px 0px 10px 0px lightgray;
+}
 .resultN {
     margin: 1.5rem;
     font-size: 3rem;
@@ -230,6 +239,9 @@ input[id='tab05']:checked ~ #disqus_thread {
     background-color: white;
     margin-left: 6rem;
 }
+#coupang img {
+    width: 15rem;
+}
 .adh {
     grid-column: 1/4;
     width: 100%;
@@ -243,12 +255,19 @@ input[id='tab05']:checked ~ #disqus_thread {
     margin: 0 auto;
 }
 .ad4 {
+    width: 250px;
+    margin: 0 auto;
+}
+.adh1 {
+    width: 100%;
+}
+.adh2 {
     width: 320px;
     margin: 0 auto;
 }
-.adv {
-    width: 160px;
-    margin: 0 auto;
+.coupang1 {
+    width: 100%;
+    margin-left: 1.5rem;
 }
 #disqus_thread {
     display: none;

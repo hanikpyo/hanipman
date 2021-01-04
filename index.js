@@ -444,6 +444,7 @@ var total = korea + china + japan + western + SEA;
 var names;
 var types;
 var spices;
+var sort;
 
 // country
 function getC(name) {
@@ -460,12 +461,13 @@ function getC(name) {
     } else if (name == 'SEA') {
         names = SEA;
     }
+    sort = names.sort();
     document.getElementById('resultC').style.display = 'block';
     document.getElementById('list').innerHTML =
         '<div>' +
         '<img src="leaf.png"/>' +
         '<span>' +
-        names.join('</span>' + '</div>' + '\n' + '<div>' + '<img src="leaf.png"/>' + '<span>');
+        sort.join('</span>' + '</div>' + '\n' + '<div>' + '<img src="leaf.png"/>' + '<span>');
     types = '';
     spices = '';
 }
@@ -635,6 +637,7 @@ function getT2(name) {
     } else if (name == 'chicken') {
         types = chicken;
     }
+    sort = types.sort();
     document.getElementById('resultT').style.display = 'none';
     document.getElementById('resultS').style.display = 'none';
     document.getElementById('spicy2').style.display = 'block';
@@ -643,7 +646,7 @@ function getT2(name) {
         '<div>' +
         '<img src="leaf.png"/>' +
         '<span>' +
-        types.join('</span>' + '</div>' + '\n' + '<div>' + '<img src="leaf.png"/>' + '<span>');
+        sort.join('</span>' + '</div>' + '\n' + '<div>' + '<img src="leaf.png"/>' + '<span>');
 }
 
 function getS2(name) {
@@ -695,6 +698,7 @@ function getS3(name) {
         spices = nspicy;
         name = '안매운거';
     }
+    sort = spices.sort();
     document.getElementById('resultC').style.display = 'block';
     document.getElementById('resultT').style.display = 'none';
     document.getElementById('resultS').style.display = 'none';
@@ -702,7 +706,7 @@ function getS3(name) {
         '<div>' +
         '<img src="leaf.png"/>' +
         '<span>' +
-        spices.join('</span>' + '</div>' + '\n' + '<div>' + '<img src="leaf.png"/>' + '<span>');
+        sort.join('</span>' + '</div>' + '\n' + '<div>' + '<img src="leaf.png"/>' + '<span>');
 }
 
 function ran(name) {

@@ -18,35 +18,37 @@ ul {
     line-height: 3.5rem;
 }
 .title {
-    font-family: 'CookieRunOTF-Bold';
     font-size: 6rem;
+    font-family: 'CookieRunOTF-Bold';
     text-align: center;
+    position: fixed;
     top: 0;
+    height: 10rem;
     width: 100%;
-    background-color: #8fb8cc;
+    background-color: #ffbb94;
     z-index: 1;
-    border-bottom: 1px solid #0b3963;
-    background-color: #8fb8cc;
+    box-shadow: 0px 0px 10px 0px lightgray;
 }
 #arrow {
     object-fit: contain;
     width: 5rem;
     position: absolute;
     left: 1rem;
-    top: 1.5rem;
+    top: 2.3rem;
 }
 input[type='checkbox'] {
     display: none;
 }
 input[type='checkbox'] + label {
     position: absolute;
-    right: 1rem;
+    right: 2rem;
     object-fit: contain;
     width: 4rem;
+    top: 0.5rem;
 }
 .settingbar {
     width: 15rem;
-    height: 15rem;
+    height: 16rem;
     position: fixed;
     background: white;
     right: -3000px;
