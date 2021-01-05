@@ -241,6 +241,7 @@ input[id='tab05']:checked ~ #disqus_thread {
 }
 #coupang img {
     width: 15rem;
+    margin-top: 5rem;
 }
 .adh {
     grid-column: 1/4;
