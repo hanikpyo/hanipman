@@ -187,7 +187,7 @@ input[id='tab05']:checked ~ #disqus_thread {
     grid-column: 1/4;
     font-size: 5rem;
     text-align: center;
-    margin: 2rem 7rem;
+    margin: 2rem 6rem;
     border-radius: 1rem;
     background: white;
     padding: 1rem;
@@ -239,6 +239,9 @@ input[id='tab05']:checked ~ #disqus_thread {
     background-color: white;
     margin-left: 6rem;
 }
+#coupang {
+    margin-top: 10rem;
+}
 #coupang img {
     width: 15rem;
     margin-top: 5rem;
@@ -261,6 +264,7 @@ input[id='tab05']:checked ~ #disqus_thread {
 }
 .adh1 {
     width: 100%;
+    margin-top: 5rem;
 }
 .adh2 {
     width: 320px;
