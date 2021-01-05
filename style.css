@@ -265,6 +265,7 @@ input[id='tab05']:checked ~ #disqus_thread {
 .adh1 {
     width: 100%;
     margin-top: 5rem;
+    margin-bottom: 3rem;
 }
 .adh2 {
     width: 320px;
