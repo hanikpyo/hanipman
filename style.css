@@ -63,7 +63,7 @@ input[type='checkbox']:checked + label + div {
 .menu {
     position:fixed;
     bottom:0;
-    width:100vw;
+    width:100%;
     padding: 0;
     background-color: white;
     margin: 0;
@@ -185,7 +185,7 @@ input[id='tab05']:checked ~ #disqus_thread {
 }
 #resultH {
     grid-column: 1/4;
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: center;
     margin: 2rem 6rem;
     border-radius: 1rem;
@@ -273,7 +273,6 @@ input[id='tab05']:checked ~ #disqus_thread {
 }
 .coupang1 {
     width: 100%;
-    margin-left: 1.5rem;
 }
 #disqus_thread {
     display: none;

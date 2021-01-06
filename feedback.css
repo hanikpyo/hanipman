@@ -65,6 +65,7 @@ input[type='checkbox']:checked + label + div {
 .content {
     background-color: #8fb8cc;
     height: 50vh;
+    margin-top: 10rem;
 }
 .explain {
     font-size: 3rem;
