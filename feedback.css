@@ -2,6 +2,8 @@ body {
     padding: 0;
     margin: 0;
     height: 100%;
+    font-family: '777Balsamtint';
+    background-color: #ffa97a;
 }
 a {
     text-decoration: none;
@@ -14,27 +16,32 @@ ul {
     padding-top: 0.5rem;
     text-align: left;
     margin:0;
-    font-family: '777Balsamtint';
-    line-height: 3.5rem;
+    line-height: 4rem;
+}
+li:nth-child(1) {
+    border-bottom: 1px solid silver;
+    width: 80%;
 }
 .title {
-    font-size: 6rem;
-    font-family: 'CookieRunOTF-Bold';
-    text-align: center;
     position: fixed;
     top: 0;
-    height: 10rem;
+    height: 7rem;
     width: 100%;
-    background-color: #ffbb94;
+    background-color: white;
     z-index: 1;
-    box-shadow: 0px 0px 10px 0px lightgray;
+}
+.title p {
+    font-size: 5.2rem;
+    position: absolute;
+    left: 9rem;
+    top: -5rem;
 }
 #arrow {
-    object-fit: contain;
-    width: 5rem;
     position: absolute;
-    left: 1rem;
-    top: 2.3rem;
+    left: 2rem;
+    width: 4rem;
+    top: 1.5rem;
+    object-fit: contain;
 }
 input[type='checkbox'] {
     display: none;
@@ -44,35 +51,34 @@ input[type='checkbox'] + label {
     right: 2rem;
     object-fit: contain;
     width: 4rem;
-    top: 0.5rem;
+    top: 1.5rem;
 }
 .settingbar {
     width: 15rem;
-    height: 16rem;
+    height: 17.5rem;
     position: fixed;
     background: white;
     right: -3000px;
     z-index: 1;
     transition: all .35s;
-    top: 7rem;
-    box-shadow: 0px 0px 10px 0px lightgray;
+    top: 6rem;
     border-radius: 0.2rem;
+    border: 1px solid silver;
 }
 
 input[type='checkbox']:checked + label + div {
     right: 1rem;
 }
 .content {
-    background-color: #8fb8cc;
     height: 50vh;
     margin-top: 10rem;
 }
 .explain {
     font-size: 3rem;
     text-align: center;
-    font-family: 'MapoPeacefull';
     margin: 0 auto;
     padding: 5rem;
+    font-weight: 900;
 }
 #disqus_thread {
     height: 100%;

@@ -3,11 +3,12 @@ html {
     margin: 0;
 }
 body {
-    background-color: #8fb8cc;
+    background-color: #ffa97a;
     padding: 0;
     margin: 0;
-    padding-top: 11rem;
+    padding-top: 8rem;
     padding-bottom: 40rem;
+    font-family: '777Balsamtint';
 }
 a {
     text-decoration: none;
@@ -20,20 +21,32 @@ ul {
     padding-top: 0.5rem;
     text-align: left;
     margin:0;
-    font-family: '777Balsamtint';
-    line-height: 3.5rem;
+    line-height: 4rem;
+}
+li:nth-child(1) {
+    border-bottom: 1px solid silver;
+    width: 80%;
 }
 .header {
-    font-size: 6rem;
-    font-family: 'CookieRunOTF-Bold';
-    text-align: center;
     position: fixed;
     top: 0;
-    height: 10rem;
+    height: 7rem;
     width: 100%;
-    background-color: #ffbb94;
+    background-color: white;
     z-index: 1;
-    box-shadow: 0px 0px 10px 0px lightgray;
+}
+.img {
+    position: absolute;
+    left: 2rem;
+    width: 4rem;
+    top: 1.5rem;
+    object-fit: contain;
+}
+.header p {
+    font-size: 5.2rem;
+    position: absolute;
+    left: 9rem;
+    top: -5rem;
 }
 input[type='checkbox'] {
     display: none;
@@ -43,19 +56,19 @@ input[type='checkbox'] + label {
     right: 2rem;
     object-fit: contain;
     width: 4rem;
-    top: 0.5rem;
+    top: 1.5rem;
 }
 .settingbar {
     width: 15rem;
-    height: 16rem;
+    height: 17.5rem;
     position: fixed;
     background: white;
     right: -3000px;
     z-index: 1;
     transition: all .35s;
-    top: 7rem;
-    box-shadow: 0px 0px 10px 0px lightgray;
+    top: 6rem;
     border-radius: 0.2rem;
+    border: 1px solid silver;
 }
 input[type='checkbox']:checked + label + div {
     right: 1rem;
@@ -68,7 +81,6 @@ input[type='checkbox']:checked + label + div {
     background-color: white;
     margin: 0;
     height: 34vh;
-    font-family: 'KyoboHand';
 }
 
 input[type='radio'] {
@@ -85,9 +97,9 @@ input[type='radio'] + label {
     border-radius: 0.2rem;
 }
 input[type='radio']:checked + label {
-    background: #ffd9b0; 
+    background: #ffbb94; 
     color: #000;
-    box-shadow: 0px 0px 10px 0px silver;
+    box-shadow: inset 0px 0px 10px 0px #ffd9b0;
 }
 input[id='tab01']:checked ~ #country {
     display: block;
@@ -118,12 +130,19 @@ input[id='tab05']:checked ~ #disqus_thread {
     width: 6rem;
     height: 6rem;
     object-fit: contain;
-    background: lightgray;
+    background: silver;
     border-radius: 40%;
+    box-shadow: inset 0px 0px 10px 0px white;
 } .menutab p {
     text-align: center;
     margin: -1rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    font-family: '777Balsamtint';
+}
+.menutab img:hover {
+    width: 7rem;
+    height: 7rem;
+    transition: all .34s;
 }
 #country {
     display: none;
@@ -181,7 +200,6 @@ input[id='tab05']:checked ~ #disqus_thread {
     display: grid;
     height: 100%;
     grid-template-columns: 6fr 4fr;
-    font-family: 'Bazzi';
 }
 #resultH {
     grid-column: 1/4;
@@ -191,7 +209,6 @@ input[id='tab05']:checked ~ #disqus_thread {
     border-radius: 1rem;
     background: white;
     padding: 1rem;
-    box-shadow: 0px 0px 10px 0px lightgray;
 }
 .resultN {
     margin: 1.5rem;
